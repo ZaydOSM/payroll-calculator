@@ -1,0 +1,30 @@
+.canada-map { 
+  fill: rgb(203, 56, 31);
+  width: 60%;
+}
+.canada-map g {
+  transition: .3s;
+}
+.canada-map g:hover { 
+  fill: #FE6B52;
+  cursor: pointer;
+}
+.active, .active:hover { 
+  fill: #095797 !important;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: Center;
+  width: 60%;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+  margin: 2em 0;
+}
