@@ -3,7 +3,6 @@ import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { FormHelperText } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -94,8 +93,6 @@ function App() {
     setSalary(e.target.value);
   }
 
-  console.log(typeof EIEE)
-
   return (
     <div className="App">
       <h1>Calculer vos cotisations à l’AE</h1>
@@ -150,7 +147,7 @@ function App() {
           <TextField id="standard-basic" type="number" label="Salaire" onChange={(e) => handleChange(e)}/>
           <Button variant="contained" onClick={(e) => EI(e)}>Calculer</Button>
         </form>
-        <p>{EIEE ? `Votre cotisation est de ${EIEE} $`: null}</p>
+        <h3>{EIEE ? `Votre cotisation est de ${EIEE} $`: null}</h3>
     </div>
   );
 }
